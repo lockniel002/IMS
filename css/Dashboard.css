@@ -1,0 +1,457 @@
+:root{
+    --first-color: #3f3737;
+    --second-color:  #000000;
+    --third-color:  #ffffff; 
+    --fourth-color:  #a11212;  
+    --icons-color: rgb(255, 0, 0); 
+}
+ 
+ *{
+   
+    box-sizing: border-box;
+    
+  }
+
+  body{
+ 
+    background-color: var(--first-color);
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--fourth-color);
+    display: flex;
+    flex-direction: row;
+  }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, var(--third-color));
+    border-radius: 6px;
+}
+nav{
+    border-style: solid;
+    margin-left: 200px;
+    width: 87%;
+}
+.navbar-brand img{
+    width: 60px;
+    height: 55px;
+ }
+ 
+ .navbar{
+     background: var(--second-color);
+     box-shadow: 10px;
+     font-weight: 500;
+     text-transform: uppercase;
+     padding: 5px 5px 5px 5px;
+ }
+ .navbar-nav p, span{
+    margin-left: 10px;
+    color: var(--third-color);
+ }
+ /* Dropdown */
+ .dropdown button{
+    border-style: none;
+ }
+.dropdown .dropdown-menu{
+    right: 0;
+    left: auto;
+    width: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: var(--first-color);
+ }
+.dropdown-menu .email-user{
+    font-style: italic;
+    font-size: xx-small;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 100;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .dropdown-menu h5{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+ }
+ .dropdown-menu li{
+    font-size: 13px;
+    
+ }
+ .dropdown-menu li :hover{
+    background-color: var(--fourth-color);
+ }
+ .log-out,a{
+    text-transform: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    color: var(--third-color);
+ }
+ .log-out,a :hover{
+    font-size: 14px;
+    text-transform: none;
+    color: red;
+ }
+ .pfp-pic{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+ }
+ .pfp-pic img{
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+ }
+
+.pfp-img img{
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+}
+.nav-item p{
+    margin-left: -100px;
+    margin-bottom: 0;
+    color: var(--third-color);
+    font-weight: bold;
+}
+.nav-item span{
+    font-size: x-small;
+    color: blue;
+}
+/* SIDEBAR LEFT */
+.left-P img{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+.sidebarL-menuD{
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: left;
+    background: var(--first-color);
+    
+    color: var(--third-color);
+    font-size: 20px;
+}
+.sidebarL-menu{
+    text-transform: none;
+    flex: auto;
+    margin: 5px 5px 5px 5px;
+    list-style-type: none;
+    text-align: left;
+    color: var(--third-color);
+}
+.me-auto{
+    margin-left: -20px;
+}
+.me-autoo{
+    margin-left: -30px;
+}
+/* SIDEBAR LEFT */
+.main{
+    padding: 5px 5px 5px 5px;
+    margin-left: 200px;
+    margin-right: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 700px;
+}
+.grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .grid-condo{
+    margin-top: 20px;
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+    background: var(--5th-color);
+    border-radius: 5px;
+    padding: 0;
+    font-size: 60px;
+    color: var(--second-color);
+    box-shadow: 1px 1px 1px 1px var(--5th-color);
+
+  }
+  .grid-item{
+    margin: 20px 5px 20px 10px;
+    padding: 10px 5px 10px 5px;
+    box-shadow: 1px 1px 1px 1px var(--5th-color);
+    border-radius: 5px;
+    height: 100px;
+    background: var(--second-color);
+    color: var(--second-color);
+  }
+  .grid-item i{
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    background: var(--third-color);
+    margin-right: 150px;
+    border-radius: 25%;
+  }
+
+  .grid-item i .bx.bx-building-house{
+    color:  var(--second-color);
+  }
+
+  .grid-item h4{
+    background: var(--third-color);
+  }
+  /* Right bar */
+.left-P{
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    background: var(--second-color);
+    padding: 5px 0 5px 0;
+    position: fixed;
+}
+.overviewTask{
+    margin-left: 15px;
+    width: 290px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px 5px var(--first-color);
+    height: 150px;
+    padding: 10px 10px 10px 10px;
+}
+.overviewTask li{
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 15px;
+    
+}
+main{
+    background: var(--first-color);
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px;
+    height: 100%;
+}
+.Accounting{
+    margin: 20px 20px 20px 20px;
+    background: var(--second-color);
+    height: 200px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+}
+.Accounting p{
+    text-align: left;
+    color: var(--third-color);
+}
+.Accounting hr{
+    border: 1px solid black;
+ 
+}
+.Accounting-body{
+    grid-template-rows: repeat(3, 1fr);
+}
+.grid-acc{
+    background: var(--5th-color);
+    width: 200px;
+}
+.right-P{
+    margin-top: 55px;
+    background: var(--second-color);
+    padding: 10px 5px 10px 5px;
+    width: 350px;
+    height: 100%;
+    text-align: left;
+    color: var(--third-color);
+    
+}
+.overviewTask{
+    height: 200px;
+}
+.overviewTask ul{
+    margin-right: 50px;
+}
+.overviewTask li{
+    font-size: small;
+}
+.right-P h6{
+    margin-top: 10px;
+}
+.right-P  span{
+    color: var(--fourth-color);
+    font-weight: 1000;
+    font-size: 20px;
+}
+.right-P p {
+    margin-left: 50px;
+    font-size: x-small;
+}
+.progresss{
+    background: var(--second-color);
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px 10px 10px;
+    color: var(--third-color);
+    box-shadow: 1px 1px 1px 1px var(--5th-color);
+    border-radius: 15px;
+}
+.progresss hr{
+    border: 1px solid black;
+}
+.progresss svg{
+    margin-top: -20px;
+    width: 100%;
+    height: 100%;
+
+}
+.progresss svg circle{
+    margin-left: 10px;
+    stroke: var(--third-color);
+    stroke-dashoffset: -10;
+    stroke-dasharray: 300;
+    stroke-width: 20px;
+}
+.progresss svg circle {
+    fill: none;
+    stroke-width: 20px;
+    stroke-linecap: round;
+    transform: translate(30px, 5px);
+    animation: circleStrokeAnimation 5s linear infinite;
+}
+
+@keyframes circleStrokeAnimation {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -628; 
+    }
+}
+.percentage p{
+    color: var(--third-color);
+    margin-top: -190px;
+    font-size: 20px;
+}
+.snd-main{
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    flex-direction: column;
+}
+.chart-line{
+    width: 600px;
+    height: 350px;
+    background: var(--second-color);
+    right: 0;
+    color: var(--third-color);
+    padding: 10px 5px 10px 5px;
+    
+    border-radius: 15px;
+}
+.chart-line h5{
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+
+
+
+/* Calendar */
+
+.calendar-css {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar-container {
+    width: 300px; /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px var(--5th-color);
+}
+
+#calendar-header {
+    background-color: var(--5th-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+#calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.today {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.selected {
+    background-color: var(--fourth-color);
+    color: #fff;
+}
+
+/* Calendar */
+
+
+
+
+
+
+
+
+footer{
+    background: var(--second-color);
+    margin-left: 200px;
+    padding: 1em 0 1em 0;
+}
+
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 4fr);
+    }
+}

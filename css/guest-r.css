@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Great+Vibes&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+:root{
+    --first-color: #a11212;
+    --second-color:  #edebeb;
+    --third-color:  #ffffff; 
+    --fourth-color:  #a11212;  
+    --text-color: #000000;
+
+    
+
+    --font-family: 'Great Vibes', sans-serif;
+    --font-manor: 'Birthstone';
+    --font-h2: 'Open Sans';
+}
+body{
+    background: var(--text-color);
+}
+/* Navbar */
+.navbar{
+    background: var(--text-color);
+    padding: 1px;
+}
+
+.navbar-brand h1{
+    color: var(--second-color);
+    margin-top: 10PX;
+    font-family: var(--font-manor);
+    text-transform: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+.navbar-brand span{
+    font-family: var(--font-family) ;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--first-color);
+}
+/* Navbar end */
+
+/* Offcanvas */
+.offcanvas {
+    margin-top: 65px;
+  background-color: rgb(0, 0, 0); 
+  width: 80%; 
+  max-width: 100px; 
+  height: 100%;
+  
+  }
+  .fade.show {
+    opacity: 0 !important; 
+  }
+  .offcanvas-header {
+    background-color: transparent;
+    border-bottom: none; 
+  }
+  
+  .offcanvas-title {
+    color: white; 
+  }
+  
+  .offcanvas-body {
+    padding: 10px 20px 20px 20px; 
+  }
+  
+  .navbar-toggler-icon {
+    color: white; 
+  }
+/* End */
+
+
+/* background Video */
+.body-head{
+    height: 110vh;
+    width: 100vh;
+    margin-top: -280px;
+    z-index: -1;
+    background-size: contain;
+    position: fixed;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.condo-name{
+    z-index: 1;
+    margin-top: 200px;
+    margin-left: 30px;
+    font-style: normal;
+    
+}
+.condo-name h1{
+    color: var(--text-color);
+    font-family: var(--font-manor);
+    text-shadow: 1px 1px 10px #ffffff;
+    font-weight: 900;
+    font-size: 70px;
+}
+.condo-name span{
+    font-family: var(--font-family) ;
+    font-weight: 900;
+    font-size: 80px;
+    text-shadow: 1px 1px 10px #fff;
+    color: var(--first-color);
+}
+.page-body{
+    padding: 0;
+    margin-top: -50px;
+    height: 500;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff75;
+}
+.h-page{
+    position: absolute;
+    background-color: transparent;
+    border-radius: 25px;
+    width: 100%;
+}
+.h-page p{
+    width: 150px;
+    background-color: #a11212;
+    border-radius: 25px;
+    padding: 10px;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+.navbar-expand-sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-expand-sm h2{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline var(--first-color);
+    font-family: var(--font-h2);
+    color: #000000;
+}
+  /* Modal */
+.modal-content{
+    background: #00000082;
+}
+.modal-header{
+    padding: 0;
+}
+.modal-body{
+    padding: 0;
+}
+
+  .alert img{
+    width: 100%;
+    height: 200px;
+    margin-left: -10px;
+    background: transparent;
+  }
