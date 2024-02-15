@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 21, 2024 at 09:03 AM
+-- Generation Time: Feb 15, 2024 at 01:20 PM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_cms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bookings`
+--
+
+CREATE TABLE `bookings` (
+  `id` int(11) NOT NULL,
+  `name` varchar(60) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `date` date NOT NULL,
+  `timeslot` time NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `bookings`
+--
+
+INSERT INTO `bookings` (`id`, `name`, `email`, `date`, `timeslot`) VALUES
+(1, 'jhuniel', 'jhuniel@gmail.com', '2024-02-20', '00:00:00'),
+(2, 'Jhuniel', 'gmail@gmai.com', '2024-02-23', '00:00:00');
 
 -- --------------------------------------------------------
 
@@ -41,11 +63,19 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UserID`, `Fname`, `Lname`, `password`, `Position`, `username`) VALUES
-(1, 'Luis Gabrielle', 'Estacio', 'Admin', 1, 'Admin@gmail.com');
+(3, 'Jhuniel', 'PogiPogi', '1234', 1, 'admin@gmail.com'),
+(4, 'Luis', 'Estacio', '1234', 2, 'username@gmail.com'),
+(6, 'Adrian', 'Macabali', '1234', 2, 'tes');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `bookings`
+--
+ALTER TABLE `bookings`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
@@ -58,10 +88,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `bookings`
+--
+ALTER TABLE `bookings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
